@@ -10,9 +10,9 @@ import org.lwjgl.opengl.Display;
 
 @Mod(modid = "ChickenSandwich.cc", name = "Oyvey", version = "0.0.6")
 public class OyVey {
-    public static final String MODID = "oyvey";
-    public static final String MODNAME = "Oyvey";
-    public static final String MODVER = "0.0.6";
+    public static final String MODID = "Hydronic";
+    public static final String MODNAME = "Hydronic";
+    public static final String MODVER = "1.0.0";
     public static final Logger LOGGER = LogManager.getLogger("Oyvey Continued");
     public static CommandManager commandManager;
     public static FriendManager friendManager;
@@ -44,7 +44,7 @@ public class OyVey {
     }
 
     public static void load() {
-        LOGGER.info("\n\nLoading Oyvey Continued By OyVey Dev Team");
+        LOGGER.info("\n\nLoading Hydronic 1.0.0 Not By OyVey Dev Team");
         unloaded = false;
         if (reloadManager != null) {
             reloadManager.unload();
@@ -80,7 +80,7 @@ public class OyVey {
     }
 
     public static void unload(boolean unload) {
-        LOGGER.info("\n\nUnloading Oyvey Continued By Oyvey Dev Team");
+        LOGGER.info("\n\nUnloading Hydronic 1.0.0 Not By OyVey Dev Team");
         if (unload) {
             reloadManager = new ReloadManager();
             reloadManager.init(commandManager != null ? commandManager.getPrefix() : ".");
@@ -127,7 +127,7 @@ public class OyVey {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        Display.setTitle("Oyvey v0.0.6");
+        Display.setTitle("Hydronic - v1.0.0");
         OyVey.load();
     }
 
